@@ -1,1 +1,43 @@
-"Hello World" 
+<!DOCTYPE html>
+<html>
+<style>
+
+div {
+    width: 0px;
+    height: 0px;
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   { left:0px; top:0px;}
+    50%  { left:1000px; top:0px;}
+    100% { left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   { left:0px; top:0px;}
+    50%  { left:1000px; top:0px;}
+    100% { left:0px; top:0px;}
+}
+</style>
+
+
+<div>
+    <object type="image/svg+xml" data="galileo_logo.svg" height="200"></object>
+</div>
+
+<body>  
+    <p id="demo"></p>
+    <p id="test"></p>
+</body>
+
+<script type="text/javascript" src="test.js"></script>
+
+</html>
